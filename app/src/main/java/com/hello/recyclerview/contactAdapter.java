@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class contactAdapter extends RecyclerView.Adapter<contactAdapter.ContectsViewHolder> {
     Context mContext;
     List<Contacts>contactsList;
@@ -45,7 +47,7 @@ public class contactAdapter extends RecyclerView.Adapter<contactAdapter.Contects
     }
 
     public class ContectsViewHolder extends RecyclerView.ViewHolder{
-        ImageView imgProfile;
+        CircleImageView imgProfile;
         TextView tvname,tvcontact;
         public ContectsViewHolder(@NonNull View itemView) {
             super(itemView);
